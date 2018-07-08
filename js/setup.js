@@ -149,7 +149,7 @@ setupClose.addEventListener('keydown', function (evt) {
   }
 });
 
-userNameInput.addEventListener('invalid', function (evt) {
+userNameInput.addEventListener('invalid', function () {
   if (userNameInput.validity.tooShort) {
     userNameInput.setCustomValidity('Введено слишком короткое имя, минимум 2 символа!');
   } else if (userNameInput.validity.tooLong) {
