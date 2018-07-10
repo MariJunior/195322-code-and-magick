@@ -1,8 +1,8 @@
 'use strict';
 (function () {
-  var shopElement = document.querySelector('.setup-artifacts-shop');
+  var shopElement = window.userDialog.querySelector('.setup-artifacts-shop');
+  var artifactsElement = window.userDialog.querySelector('.setup-artifacts');
   var draggedItem = null;
-  var artifactsElement = document.querySelector('.setup-artifacts');
 
   shopElement.addEventListener('dragstart', function (evt) {
     if (evt.target.tagName.toLowerCase() === 'img') {

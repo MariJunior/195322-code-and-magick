@@ -1,8 +1,6 @@
 'use strict';
 (function () {
-
-  var setupDialogElement = document.querySelector('.setup');
-  var dialogHandler = setupDialogElement.querySelector('.upload');
+  var dialogHandler = window.userDialog.querySelector('.upload');
 
   dialogHandler.addEventListener('mousedown', function (evt) {
     evt.preventDefault();
@@ -28,8 +26,8 @@
         y: moveEvt.clientY
       };
 
-      setupDialogElement.style.top = (setupDialogElement.offsetTop - shift.y) + 'px';
-      setupDialogElement.style.left = (setupDialogElement.offsetLeft - shift.x) + 'px';
+      window.userDialog.style.top = (window.userDialog.offsetTop - shift.y) + 'px';
+      window.userDialog.style.left = (window.userDialog.offsetLeft - shift.x) + 'px';
 
     };
 
