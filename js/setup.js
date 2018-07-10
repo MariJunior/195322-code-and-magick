@@ -48,7 +48,6 @@ var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
 
 var userDialog = document.querySelector('.setup');
-window.userDialog = userDialog;
 var wizardsInterface = document.querySelector('.setup-similar');
 var wizardsList = document.querySelector('.setup-similar-list');
 var template = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
@@ -118,7 +117,7 @@ var onPopupEscPress = function (evt) {
 var openPopup = function () {
   userDialog.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
-  window.resetDialogPosition();
+  window.resetDialogPosition(userDialog);
 };
 
 var closePopup = function () {
