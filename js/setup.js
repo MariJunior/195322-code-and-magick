@@ -108,6 +108,7 @@ var onPopupEscPress = function (evt) {
     if (target === userNameInput) {
       evt.stopPropagation();
     } else {
+      evt.preventDefault();
       closePopup();
     }
   }
@@ -116,6 +117,7 @@ var onPopupEscPress = function (evt) {
 var openPopup = function () {
   userDialog.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
+  window.resetDialogPosition(userDialog);
 };
 
 var closePopup = function () {
