@@ -31,9 +31,7 @@
     xhr.timeout = TIMEOUT;
 
     xhr.open(method, url);
-    if (data) {
-      xhr.send(data);
-    }
+    xhr.send(data);
   };
 
   window.backend = {
