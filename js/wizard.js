@@ -50,7 +50,7 @@
     wizardCoatElement.style.fill = newColor;
     coatColorInput.value = newColor;
 
-    window.wizard.onCoatChange(newColor);
+    wizard.onCoatChange(newColor);
   });
 
   wizardEyesElement.addEventListener('click', function () {
@@ -59,7 +59,7 @@
     wizardEyesElement.style.fill = newColor;
     eyeColorInput.value = newColor;
 
-    window.wizard.onEyesChange(newColor);
+    wizard.onEyesChange(newColor);
   });
 
   wizardFireballElement.addEventListener('click', function () {
@@ -68,7 +68,7 @@
     wizardFireballElement.style.background = newColor;
     fireballColorInput.value = newColor;
 
-    window.wizard.onFireballChange(newColor);
+    wizard.onFireballChange(newColor);
   });
 
   window.wizard = wizard;
